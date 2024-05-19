@@ -13,25 +13,19 @@ import HomeHeader from "./components/HomeHeader";
 import HomePage from "./components/HomePage";
 
 export default function App() {
-  const [value, setValue] = useState("");
-
   return (
     <AppLayout
       toolsHide={true}
       navigationHide={true}
       contentHeader={
         <HomeHeader
-          home="This is the home"
-          description="description"
+          home="Working with CloudScape"
+          description="CloudScape Documentation"
           link="https://cloudscape.design/"
         />
       }
       content={
-        <HomePage
-          value={value}
-          submit="Click Me"
-          label="This is the label for the project"
-        />
+        <HomePage submit="Click Me" label="This is the label for the project" />
       }
     />
   );

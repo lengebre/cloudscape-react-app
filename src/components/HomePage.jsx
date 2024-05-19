@@ -23,7 +23,7 @@ export default function HomePage(props) {
       <SpaceBetween size="l">
         <FormField label={props.label}>
           <Input
-            value={props.value}
+            value={value}
             onChange={(event) => setValue(event.detail.value)}
           />
         </FormField>
